@@ -42,12 +42,12 @@ import reload
 table_cms_news = 'cms_news'
 table_cms_news_pic = 'cms_news_pic'
 # db = pymysql.connect(host='127.0.0.1', user='root', passwd='', db='itchat', charset='utf8')
-db = pymysql.connect(host='192.168.1.165', user='root', passwd='djs@12316', db='fz_afmcms', charset='utf8')
+db = pymysql.connect(host='xxx', user='xxx', passwd='xxx', db='fz_afmcms', charset='utf8')
 cur = db.cursor()
 
-urlHost = 'http://222.173.29.165:8880/images/'
+urlHost = 'xxx'
 # 连接到MongoDB
-client = MongoClient('192.168.1.99', 27031)
+client = MongoClient('xxx', xxx)
 db = client.images
 fs = GridFS(db, 'fs')
 
