@@ -8,3 +8,4 @@ itchat微信接口
 05 itchat获得微信好友信息以及表图对比<br>
 06 python打印出微信被删除好友<br>
 07 itchat自动回复好友<br>
+08 itchat微信好友个性签名词云图<br>
