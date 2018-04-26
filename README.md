@@ -7,3 +7,4 @@ itchat微信接口
 04 itchat监听微信群或好友撤回的消息<br>
 05 itchat获得微信好友信息以及表图对比<br>
 06 python打印出微信被删除好友<br>
+07 itchat自动回复好友<br>
