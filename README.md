@@ -9,3 +9,4 @@ itchat微信接口
 06 python打印出微信被删除好友<br>
 07 itchat自动回复好友<br>
 08 itchat微信好友个性签名词云图<br>
+09 itchat微信好友性别比例<br>
