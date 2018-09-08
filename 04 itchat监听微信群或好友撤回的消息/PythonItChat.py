@@ -84,26 +84,26 @@ def receive_msg(msg):
                                        msg_content = r"纬度->" + x.__str__() + " 经度->" + y.__str__()
                                    else:
                                        msg_content = r"" + location
-# 如果消息为分享的音乐或者文章，详细的内容为文章的标题或者是分享的名字
-elif msg['Type'] == 'Sharing':
-    msg_content = msg['Text']
-    # 记录分享的url
-        msg_share_url = msg['Url']
-    face_bug = msg_content
-    # 将信息存储在字典中，每一个msg_id对应一条信息
-    msg_information.update(
-                           {
-                           msg_id: {
-                           "msg_from": msg_from,
-                           "msg_time": msg_time,
-                           "msg_time_rec": msg_time_rec,
-                           "msg_type": msg["Type"],
-                           "msg_content": msg_content,
-                           "msg_share_url": msg_share_url,
-                           "group_name":group_name
-                           }
-                           }
-                           )
+    # 如果消息为分享的音乐或者文章，详细的内容为文章的标题或者是分享的名字
+    elif msg['Type'] == 'Sharing':
+        msg_content = msg['Text']
+        # 记录分享的url
+            msg_share_url = msg['Url']
+        face_bug = msg_content
+        # 将信息存储在字典中，每一个msg_id对应一条信息
+        msg_information.update(
+                               {
+                               msg_id: {
+                               "msg_from": msg_from,
+                               "msg_time": msg_time,
+                               "msg_time_rec": msg_time_rec,
+                               "msg_type": msg["Type"],
+                               "msg_content": msg_content,
+                               "msg_share_url": msg_share_url,
+                               "group_name":group_name
+                               }
+                               }
+                               )
 
 # 监听是否有消息撤回
 # 使用下面的装饰器监听，会发送4条消息

@@ -73,30 +73,30 @@ def text_reply(msg):
                 print (source, time)
                 # 下载图片
                 print("下载图片")
-                    # print imgArray
-                    # print title[0]
-                    get_image(title, imgArray, source, time,msg["Url"],content)
-                
-                    print ("个人分享文章类型编号MsgType:" + "---------------------------")
-                        print (msg["MsgType"])
-                        print ("个人分享Content:" + "---------------------------")
-                        print (msg["Content"])
-                        print ("个人分享FromUserName:" + "---------------------------")
-                        print (msg["FromUserName"])
-                        print ("个人分享ToUserName:" + "---------------------------")
-                        print (msg["ToUserName"])
-                        print ("个人分享链接标题FileName:" + "---------------------------")
-                        print (msg["FileName"])
+                # print imgArray
+                # print title[0]
+                get_image(title, imgArray, source, time,msg["Url"],content)
+            
+                print ("个人分享文章类型编号MsgType:" + "---------------------------")
+                print (msg["MsgType"])
+                print ("个人分享Content:" + "---------------------------")
+                print (msg["Content"])
+                print ("个人分享FromUserName:" + "---------------------------")
+                print (msg["FromUserName"])
+                print ("个人分享ToUserName:" + "---------------------------")
+                print (msg["ToUserName"])
+                print ("个人分享链接标题FileName:" + "---------------------------")
+                print (msg["FileName"])
+            
+                # return msg['Text']
+                # itchat.send('%s: %s : %s' % (msg['Type'], msg['Text'],msg['Url']), msg['FromUserName'])
+                print ("------------个人")
+                    # 获取到的信息是某某人和登录者之间的通讯，如果不是和登录这通讯就获取不到
+                print (itchat.search_friends(userName=msg['FromUserName'])['NickName'])
+                print (itchat.search_friends(userName=msg['ToUserName'])['NickName'])
                     
-                        # return msg['Text']
-                        # itchat.send('%s: %s : %s' % (msg['Type'], msg['Text'],msg['Url']), msg['FromUserName'])
-                        print ("------------个人")
-                            # 获取到的信息是某某人和登录者之间的通讯，如果不是和登录这通讯就获取不到
-                            print (itchat.search_friends(userName=msg['FromUserName'])['NickName'])
-                            print (itchat.search_friends(userName=msg['ToUserName'])['NickName'])
-                                
-                                else:
-                                    print ("不是个人分享的文章")
+    else:
+        print ("不是个人分享的文章")
 
 
 # 处理群聊消息
