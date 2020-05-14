@@ -1,9 +1,5 @@
 # Python-WeChat-ItChat
 
-公众号:全栈Style  不断更新新文章 欢迎关注
-
-<img src="全栈Style.jpeg" width="375">
-
 
 itchat微信接口
 
